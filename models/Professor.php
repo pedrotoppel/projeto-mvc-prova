@@ -13,6 +13,14 @@
             return $stmt->get_result()->fetch_assoc();
         }
 
+        public function senhaUsuario($conn, $id){
+            $stmt = $conn->prepare("SELECT senha FROM professores WHERE id=?");
+            $stmt->bind_param("i", $id);
+            $stmt->execute();
+            $result = $stmt->get_result()->fetch_assoc();
+            return $result["senha"];
+        }
+
         public function create($conn, $nome, $email, $password){
             $stmt = $conn->prepare("INSERT INTO professores (nome, email, senha) VALUES (?, ?, ?)");
             $stmt->bind_param("sss", $nome, $email, $password);

@@ -12,6 +12,7 @@
     <th>ID</th>
     <th>NOME</th>
     <th>EMAIL</th>
+    <th>TELEFONE</th>
     <th>OPCOES</th>
 </tr>
 
@@ -24,15 +25,16 @@
         <td><?php echo $row['id']?></td>
         <td><?php echo htmlspecialchars($row["nome"])?></td>
         <td><?php echo htmlspecialchars($row["email"])?></td>
+        <td><?php echo htmlspecialchars($row["telefone"])?></td>
         <td>
-            <a href="professores.php?action=viewupdate&id=<?= $row["id"] ?>">Atualizar</a>
-            <a href="professores.php?action=delete&id=<?= $row["id"]?>">excluir</a>
+            <a href="alunos.php?aluno=viewupdate&id=<?= $row["id"] ?>">Atualizar</a>
+            <a href="alunos.php?aluno=delete&id=<?= $row["id"]?>">excluir</a>
         </td>
     </tr>
 
 <?php } ?>
 </table>
-    <a href="professores.php?action=viewpost">Novo Professor</a>
+    <a href="alunos.php?aluno=viewpost">Novo Aluno</a>
 
 </body>
 </html>
