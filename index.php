@@ -9,5 +9,7 @@
     <a href="professores.php">PROFESSORES</a>
     <br>
     <a href="alunos.php">ALUNOS</a>
+    <br>
+    <a href="cursos.php">TURMAS</a>
 </body>
 </html>
