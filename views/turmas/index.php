@@ -12,7 +12,7 @@
         <tr>
             <th>ID</th>
             <th>NOME</th>
-            <th>AREA</th>
+            <th>CURSO</th>
             <th>OPÇOES</th>
         </tr>
 
@@ -24,16 +24,16 @@
 
                 <td><?php echo $row['id'] ?></td>
                 <td><?php echo htmlspecialchars($row["nome"]) ?></td>
-                <td><?php echo htmlspecialchars($row["area_id"]) ?></td>
+                <td><?php echo htmlspecialchars($row["curso_id"]) ?></td>
                 <td>
-                    <a href="cursos.php?curso=viewupdate&id=<?= $row["id"] ?>">Atualizar</a>
-                    <a href="cursos.php?curso=delete&id=<?= $row["id"] ?>">excluir</a>
+                    <a href="turmas.php?turma=viewupdate&id=<?= $row["id"] ?>">Atualizar</a>
+                    <a href="turmas.php?turma=delete&id=<?= $row["id"] ?>">excluir</a>
                 </td>
             </tr>
 
         <?php } ?>
     </table>
-    <a href="cursos.php?curso=viewpost">Novo Curso</a>
+    <a href="turmas.php?turma=viewpost">Nova Turma</a>
 
 </body>
 

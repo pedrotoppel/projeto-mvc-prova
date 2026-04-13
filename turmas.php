@@ -1,33 +1,33 @@
 <?php
 
 require_once("config/connection.php");
-require_once("controller/CursoController.php");
+require_once("controller/TurmaController.php");
 
-$curso = new CursoController($conn);
+$turma = new TurmaController($conn);
 
-$action = $_GET["curso"] ?? "index";
+$action = $_GET["turma"] ?? "index";
 
 switch($action){
     // create
     case "viewpost":
-        $curso->ViewPost();
+        $turma->ViewPost();
         break;
     case "modelpost":
-        $curso->ModelPost();
+        $turma->ModelPost();
         break;
     // update
     case "viewupdate":
-       $curso->ViewUpdate();
+       $turma->ViewUpdate();
        break;
     case "modelupdate":
-        $curso->ModelUpdate();
+        $turma->ModelUpdate();
         break;
     // delete
     case "delete":
-        $curso->delete();
+        $turma->delete();
         break;    
     // read    
     default:
-        $curso->index();
+        $turma->index();
         break;    
 }

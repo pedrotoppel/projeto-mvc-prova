@@ -1,33 +1,33 @@
 <?php
 
 require_once("config/connection.php");
-require_once("controller/CursoController.php");
+require_once("controller/DisciplinaController.php");
 
-$curso = new CursoController($conn);
+$disciplina = new DisciplinaController($conn);
 
-$action = $_GET["curso"] ?? "index";
+$action = $_GET["disciplina"] ?? "index";
 
 switch($action){
     // create
     case "viewpost":
-        $curso->ViewPost();
+        $disciplina->ViewPost();
         break;
     case "modelpost":
-        $curso->ModelPost();
+        $disciplina->ModelPost();
         break;
     // update
     case "viewupdate":
-       $curso->ViewUpdate();
+       $disciplina->ViewUpdate();
        break;
     case "modelupdate":
-        $curso->ModelUpdate();
+        $disciplina->ModelUpdate();
         break;
     // delete
     case "delete":
-        $curso->delete();
+        $disciplina->delete();
         break;    
     // read    
     default:
-        $curso->index();
+        $disciplina->index();
         break;    
 }

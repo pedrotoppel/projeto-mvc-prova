@@ -10,6 +10,10 @@
     <br>
     <a href="alunos.php">ALUNOS</a>
     <br>
-    <a href="cursos.php">TURMAS</a>
+    <a href="cursos.php">CURSOS</a>
+    <br>
+    <a href="turmas.php">TURMAS</a>
+    <br>
+    <a href="disciplinas.php">DISCIPLINAS</a>
 </body>
 </html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cursos.php?curso=modelpost" method="POST">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="number" name="area_id" placeholder="Numero da Área">
+        <button type="submit">ENVIAR</button>
+    </form>
+</body>
+</html>
